@@ -1,1 +1,11 @@
+$primary: #5265E1;
+$secondary: #FA5959;
+$light: rgb(248, 248, 248);
+
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "light": $light
+);
+
 @import "./node_modules/bootstrap/scss/bootstrap.scss";
