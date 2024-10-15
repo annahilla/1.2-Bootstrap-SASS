@@ -9,3 +9,14 @@ $theme-colors: (
 );
 
 @import "./node_modules/bootstrap/scss/bootstrap.scss";
+
+.hero .hero-img-container img {
+    width: 50rem;
+}
+
+.bg-box {
+    width: 50rem;
+    height: 25rem;
+    bottom: 5rem;
+    right: 0;
+}

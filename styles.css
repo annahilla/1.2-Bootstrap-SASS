@@ -11494,4 +11494,14 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important;
   }
+}
+.hero .hero-img-container img {
+  width: 50rem;
+}
+
+.bg-box {
+  width: 50rem;
+  height: 25rem;
+  bottom: 5rem;
+  right: 0;
 }/*# sourceMappingURL=styles.css.map */
