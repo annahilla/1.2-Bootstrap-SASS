@@ -1,63 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="Imagenes/favicon-32x32.png" type="image/png">
     <title>Bookmark</title>
 </head>
-<body>
-    <div class="position-relative">
 
-            <header class="py-4 my-4 ">
-                <nav class="navbar navbar-expand-lg py-3 px-5 mx-5">
-                    <!-- Logo -->
-                    <img src="/Imagenes/logo-bookmark.svg" alt="logo bookmark">
-    
-                    <!-- Toggler button -->
-                    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-    
-                    <!-- Navbar -->
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fw-medium">
-                        <li class="nav-item text-uppercase mx-4">
-                            <a href="#" class="nav-link">Features</a>
-                        </li>
-                        <li class="nav-item text-uppercase mx-4">
-                            <a href="#" class="nav-link">Pricing</a>
-                        </li>
-                        <li class="nav-item text-uppercase mx-4">
-                            <a href="#" class="nav-link">Contact</a>
-                        </li>
-                        <li class="nav-item mx-4">
-                            <button type="button" class="btn btn-secondary text-uppercase fw-medium py-2 px-4 shadow-sm text-white">Login</button>
-                        </li>
-                        </ul>
+<body class="overflow-x-hidden">
+    <header class="py-4 my-4">
+        <nav class="navbar navbar-expand-lg py-3 px-5 mx-5 w-100">
+            <!-- Logo -->
+            <img src="/Imagenes/logo-bookmark.svg" alt="logo bookmark">
+
+            <!-- Toggler button -->
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fw-medium">
+                    <li class="nav-item text-uppercase mx-4">
+                        <a href="#" class="nav-link">Features</a>
+                    </li>
+                    <li class="nav-item text-uppercase mx-4">
+                        <a href="#" class="nav-link">Pricing</a>
+                    </li>
+                    <li class="nav-item text-uppercase mx-4">
+                        <a href="#" class="nav-link">Contact</a>
+                    </li>
+                    <li class="nav-item mx-4">
+                        <button type="button"
+                            class="btn btn-secondary text-uppercase fw-medium py-2 px-4 shadow-sm text-white">Login</button>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Hero -->
+
+        <section class="hero row align-items-center my-5 py-5 gap-3">
+            <div class="hero-text-content col col-lg-5 col-sm-12 px-5">
+                <h1 class="fw-bolder display-3 py-4">A Simple Bookmark Manager</h1>
+                <p class="text-body-tertiary">A clean and simple interface to organize your favourite
+                    websites.
+                    Open a new browser tab and see your sites load instantly. Try it for free.</p>
+                <div class="cta-buttons d-flex gap-3 py-4">
+                    <button class="btn btn-primary shadow-sm fw-semibold px-3 py-2">Get it on Chrome</button>
+                    <button class="btn btn-light shadow-sm fw-semibold text-body-secondary px-3 py-2">Get it on
+                        Firefox</button>
+                </div>
+            </div>
+            <div class="hero-img-container col col-lg-6 col-sm-12 position-relative">
+                <img class="hero-img img-fluid" src="/Imagenes/illustration-hero.svg"
+                    alt="Hero illustration of a computer">
+                <div class="bg-box bg-primary rounded-start-pill z-n1 position-absolute"></div>
+            </div>
+        </section>
+    </header>
+
+
+    <!-- Features Section -->
+    <section class="features my-5">
+        <div class="features-header d-flex flex-column align-items-center text-center">
+            <h3 class="fw-bolder display-5 py-5">Features</h3>
+            <p class="text-body-tertiary fs-4 w-50">Our aim is to make it quick and easy for you to access your
+                favourite
+                websites. Your bookmarks sync
+                between your devices so you can access them on the go.</p>
+        </div>
+
+        <!-- Tabs -->
+        <ul class="nav nav-tabs d-flex justify-content-center my-5" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link px-5 py-4 text-body-secondary fs-4 fw-medium active" id="bookmarking-tab"
+                    data-bs-toggle="tab" data-bs-target="#bookmarking-tab-pane" type="button" role="tab"
+                    aria-controls="bookmarking-tab-pane" aria-selected="true">Simple
+                    Bookmarking</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link px-5 py-4 text-body-secondary fs-4 fw-medium " id="speedy-searching-tab"
+                    data-bs-toggle="tab" data-bs-target="#speedy-searching-tab-pane" type="button" role="tab"
+                    aria-controls="speedy-searching-tab-pane" aria-selected="false">Speedy
+                    Searching</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link px-5 py-4 text-body-secondary fs-4 fw-medium" id="easy-sharing-tab"
+                    data-bs-toggle="tab" data-bs-target="#easy-sharing-tab-pane" type="button" role="tab"
+                    aria-controls="easy-sharing-tab-pane" aria-selected="false">Easy
+                    Sharing</button>
+            </li>
+        </ul>
+
+        <div class="tab-content py-5" id="myTabContent">
+            <div class="tab-pane fade show active" id="bookmarking-tab-pane" role="tabpanel"
+                aria-labelledby="bookmarking-tab" tabindex="0">
+                <div class="row align-items-center">
+                    <div class="tab-img-container col col-lg-6 col-sm-12 position-relative">
+                        <img class="img-fluid" src="Imagenes/illustration-features-tab-1.svg"
+                            alt="Tab illustration of a computer">
+                        <div class="bg-box-left bg-primary rounded-end-circle z-n1 position-absolute"></div>
                     </div>
-            </nav>
-    
-            <!-- Hero -->
-    
-            <section class="hero row align-items-center my-5 py-5">
-                <div class="hero-text-content col col-lg-5 col-sm-12 px-5 mx-5">
-                    <h1 class="fw-bolder display-3 py-4">A Simple Bookmark Manager</h1>
-                    <p class="text-body-tertiary fs-4">A clean and simple interface to organize your favourite websites. Open a new browser tab and see your sites load instantly. Try it for free.</p>
-                    <div class="cta-buttons d-flex gap-3 py-4">
-                        <button class="btn btn-primary shadow-sm fw-semibold px-3 py-2">Get it on Chrome</button>
-                        <button class="btn btn-light shadow-sm fw-semibold text-body-secondary px-3 py-2">Get it on Firefox</button>
+                    <div class="tab-content col col-lg-5 col-sm-12 px-5">
+                        <h5 class=" display-6 fw-medium my-4">Bookmark in one click</h5>
+                        <p class="text-body-tertiary fs-4 w-75">Organize your bookmarks however you like. Our simple
+                            drag-and-drop interface gives you
+                            complete
+                            control over how you manage your favourite sites.</p>
+                        <button class="btn btn-primary px-4 py-3 my-2">More info</button>
                     </div>
                 </div>
-                <div class="hero-img-container col col-lg-6 col-sm-12">
-                    <img class="img-fluid" src="/Imagenes/illustration-hero.svg" alt="Hero illustration of a computer">
-                    <div class="bg-box bg-primary rounded-start-pill z-n1 position-absolute"></div>
-                </div>
-            </section>
-            </header>
-           
+            </div>
 
-    </div>
+            <div class="tab-pane fade" id="speedy-searching-tab-pane" role="tabpanel"
+                aria-labelledby="speedy-searching-tab" tabindex="0">
+                <div class="row align-items-center">
+                    <div class="tab-img-container col col-lg-6 col-sm-12 position-relative">
+                        <img class="img-fluid" src="Imagenes/illustration-features-tab-2.svg"
+                            alt="Tab illustration of a computer">
+                        <div class="bg-box-left bg-primary rounded-end-circle z-n1 position-absolute"></div>
+                    </div>
+                    <div class="tab-content col col-lg-5 col-sm-12 px-5">
+                        <h5 class=" display-6 fw-medium my-4">Intelligent search</h5>
+                        <p class="text-body-tertiary fs-4 w-75">Our powerful feature will help you find saved sites
+                            in no time at all. No need to trawl through all your bookmarks</p>
+                        <button class="btn btn-primary px-4 py-3 my-2">More info</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="easy-sharing-tab-pane" role="tabpanel" aria-labelledby="easy-sharing-tab"
+                tabindex="0">
+                <div class="row align-items-center">
+                    <div class="tab-img-container col col-lg-6 col-sm-12 position-relative">
+                        <img class="img-fluid" src="Imagenes/illustration-features-tab-3.svg"
+                            alt="Tab illustration of a computer">
+                        <div class="bg-box-left bg-primary rounded-end-circle z-n1 position-absolute"></div>
+                    </div>
+                    <div class="tab-content col col-lg-5 col-sm-12 px-5">
+                        <h5 class=" display-6 fw-medium my-4">Share your bookmarks</h5>
+                        <p class="text-body-tertiary fs-4 w-75">Easily share your bookmarks and collections with
+                            others.
+                            Create a shareable link that you can send at the click of a button.</p>
+                        <button class="btn btn-primary px-4 py-3 my-2">More info</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
+
 </html>

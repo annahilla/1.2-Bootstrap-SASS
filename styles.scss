@@ -1,6 +1,6 @@
 $primary: #5265E1;
 $secondary: #FA5959;
-$light: rgb(248, 248, 248);
+$light: #f6f6f8;
 
 $theme-colors: (
   "primary": $primary,
@@ -10,13 +10,74 @@ $theme-colors: (
 
 @import "./node_modules/bootstrap/scss/bootstrap.scss";
 
-.hero .hero-img-container img {
-    width: 50rem;
+
+// Hero
+
+.hero {
+  margin-left: 3rem;
+}
+
+.hero .hero-text-content p {
+  font-size: 2.5rem;
+}
+
+.hero .hero-img-container .hero-img {
+  width: 100rem;
 }
 
 .bg-box {
-    width: 50rem;
-    height: 25rem;
-    bottom: 5rem;
-    right: 0;
+    width: 90%;
+    height: 80%;
+    bottom: 0rem;
+    right: -10rem;
+}
+
+// Features section
+
+.bg-box-left {
+  width: 80%;
+  height: 80%;
+  bottom: -10rem;
+  left: 0;
+}
+
+.tab-pane img{
+  width: 45rem;
+  margin-left: 10rem;
+}
+
+.nav-tabs {
+  display: inline-block;
+  border: none;
+}
+
+.nav-tabs .nav-item .nav-link{
+  border: none;
+  border-bottom: 3px solid $light;
+  padding-bottom: 7px;
+}
+
+.nav-tabs .nav-item .nav-link.active {
+  border: none;
+  border-bottom: 7px solid $secondary;
+}
+
+@media (max-width:1200px) {
+  .hero .hero-text-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero .hero-text-content p {
+    font-size: 1.2rem;
+  }
+
+  .hero .hero-img-container .hero-img {
+    width: 60rem;
+    margin-left: 2rem;
+  }
+
+}
+
+@media (max-width:992px) {
+  
 }
