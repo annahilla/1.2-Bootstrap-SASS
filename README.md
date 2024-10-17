@@ -17,5 +17,5 @@ This project is a **landing page** built using **HTML**, **SASS**, and **Bootstr
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/your-repo-name.git
+   git clone https://github.com/annahilla/1.2-Bootstrap-SASS
    ```
