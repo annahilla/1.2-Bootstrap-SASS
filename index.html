@@ -254,8 +254,13 @@
             <span class="text-uppercase">35.000+ already joined</span>
             <h5>Stay up-to-date with what we're doing</h5>
 
-            <form>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your email address">           
+            <form class="needs-validation" novalidate>
+                <div class="input-group">
+                    <input type="email" class="form-control position-relative" id="email" placeholder="Enter your email address" required>
+                    <div class="invalid-feedback position-absolute">
+                        Please enter a valid email
+                    </div>           
+                </div>
                 <button type="submit" class="btn btn-secondary text-white">Contact us</button>
             </form>
         </div>
@@ -285,6 +290,29 @@
        </footer>
 
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+         // Example starter JavaScript for disabling form submissions if there are invalid fields
+(function () {
+  'use strict'
+
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  var forms = document.querySelectorAll('.needs-validation')
+
+  // Loop over them and prevent submission
+  Array.prototype.slice.call(forms)
+    .forEach(function (form) {
+      form.addEventListener('submit', function (event) {
+        if (!form.checkValidity()) {
+          event.preventDefault()
+          event.stopPropagation()
+        }
+
+        form.classList.add('was-validated')
+      }, false)
+    })
+})()
+    
+    </script>
 </body>
 
 </html>

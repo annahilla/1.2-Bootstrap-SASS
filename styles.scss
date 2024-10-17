@@ -157,8 +157,13 @@ footer .upper-footer form {
   gap: 1rem;
 }
 
-footer .upper-footer input {
+footer .upper-footer form .input-group {
   width: 20%;
+}
+
+.input-group:not(.has-validation) > :not(:last-child):not(.dropdown-toggle):not(.dropdown-menu):not(.form-floating), .input-group:not(.has-validation) > .dropdown-toggle:nth-last-child(n+3), .input-group:not(.has-validation) > .form-floating:not(:last-child) > .form-control, .input-group:not(.has-validation) > .form-floating:not(:last-child) > .form-select {
+  border-top-right-radius: .5rem;
+  border-bottom-right-radius: .5rem;
 }
 
 footer .lower-footer {
@@ -186,6 +191,14 @@ footer .lower-footer .socials {
   align-items: center;
   justify-content: center;
   gap: 2rem;
+}
+
+.invalid-feedback {
+  background-color: $danger;
+  color: white;
+  padding: .5rem 0;
+  border-radius: .5rem;
+  top: 2rem;
 }
 
 // Media Queries
@@ -340,7 +353,7 @@ footer .upper-footer form {
   flex-direction: column;
 }
 
-footer .upper-footer input, footer .upper-footer .btn {
+footer .upper-footer form .input-group, footer .upper-footer .btn {
   width: 80%;
 }
 
