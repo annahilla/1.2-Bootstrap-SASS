@@ -1,11 +1,13 @@
 $primary: #5265E1;
 $secondary: #FA5959;
 $light: #f6f6f8;
+$dark: #242946;
 
 $theme-colors: (
   "primary": $primary,
   "secondary": $secondary,
-  "light": $light
+  "light": $light,
+  "dark": $dark
 );
 
 @import "./node_modules/bootstrap/scss/bootstrap.scss";
@@ -132,6 +134,60 @@ header {
   width: 30%;
 }
 
+
+// Footer
+footer .upper-footer{
+  padding: 4rem 0;
+}
+
+footer .upper-footer span{
+  font-size: .8rem;
+  letter-spacing: 0.2rem;
+}
+
+footer .upper-footer h5 {
+  padding: 2rem 0;
+  font-size: 2rem;
+}
+
+footer .upper-footer form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+footer .upper-footer input {
+  width: 20%;
+}
+
+footer .lower-footer {
+  padding: 2rem 4rem;
+}
+
+footer .lower-footer .nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+
+footer .lower-footer .nav-container ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  list-style: none;
+  margin-bottom: 0;
+}
+
+footer .lower-footer .socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
 // Media Queries
 @media (max-width: 1400px) { 
   .hero .hero-text-content h1 {
@@ -171,6 +227,17 @@ header {
 }
 
 @media (max-width: 992px) {
+  header .navbar .navbar-nav {
+    width: 100%;
+    text-align: center;
+    margin-top: 1rem;
+  }
+
+  header .navbar .navbar-nav .nav-item {
+    border-top: 1px solid $light;
+    padding: 1rem 0;
+  }
+
   .hero{
     display: flex;
     flex-direction: column;
@@ -264,6 +331,35 @@ header {
 .download-extension .cards-container .card:nth-child(3) {
   margin-top: 0;
 }
+
+footer .upper-footer {
+  padding: 3rem 2rem;
+}
+
+footer .upper-footer form {
+  flex-direction: column;
+}
+
+footer .upper-footer input, footer .upper-footer .btn {
+  width: 80%;
+}
+
+footer .lower-footer .navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+}
+
+footer .lower-footer .nav-container, footer .lower-footer .nav-container ul {
+  flex-direction: column;
+}
+
+.lower-footer .nav-container ul {
+  padding-left: 0;
+}
+
 }
 
 @media (max-width: 768px) { 
