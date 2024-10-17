@@ -142,9 +142,11 @@ header {
 .tab-text-content p {
   width: 75%;
 }
+
 .nav-item .nav-link {
   color: gray;
 }
+
 .nav-link:hover{
   color: $secondary;
 }
@@ -254,16 +256,35 @@ footer .lower-footer a:hover {
 }
 
 .invalid-feedback {
-  background-color: $danger;
+  background-color: $secondary;
+  font-style: italic;
+  font-size: 1rem;
   color: white;
-  padding: .5rem 0;
+  padding: .5rem 1rem;
   border-radius: .5rem;
   top: 2rem;
+  text-align: start;
 }
 
 footer .lower-footer .socials img:hover{
+    filter: brightness(0) saturate(100%) invert(64%) sepia(68%) saturate(3294%) hue-rotate(314deg) brightness(97%) contrast(95%);
+    cursor: pointer;
+}
+
+.social-icon {
+  width: 24px;
+  height: 24px;
+  background-size: contain;
+  background-repeat: no-repeat;
   cursor: pointer;
-  fill: $secondary;
+}
+
+.facebook-icon {
+  background-image: url('Imagenes/icon-facebook.svg');
+}
+
+.twitter-icon {
+  background-image: url('Imagenes/icon-twitter.svg');
 }
 
 // Media Queries
@@ -436,6 +457,12 @@ footer .lower-footer .nav-container, footer .lower-footer .nav-container ul {
 
 .lower-footer .nav-container ul {
   padding-left: 0;
+}
+
+.needs-validation.was-validated {
+  .btn-secondary {
+    margin-top: 2rem;
+  }
 }
 
 }
