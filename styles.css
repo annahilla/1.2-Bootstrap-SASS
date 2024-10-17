@@ -11617,6 +11617,20 @@ header {
   padding: 0 3rem;
 }
 
+.nav-item button {
+  color: white;
+}
+
+.nav-item a:hover {
+  color: #FA5959;
+}
+
+.nav-item button:hover {
+  background-color: transparent;
+  border: 1px solid #FA5959;
+  color: #FA5959;
+}
+
 .hero {
   margin-left: 3rem;
   margin: 5rem 0;
@@ -11649,6 +11663,18 @@ header {
   height: 80%;
   bottom: 0rem;
   right: 0rem;
+}
+
+.cta-buttons .btn-primary:hover {
+  background-color: transparent;
+  border: 1px solid #5265E1;
+  color: #5265E1;
+}
+
+.cta-buttons .btn-light:hover {
+  background-color: transparent;
+  border: 1px solid gray;
+  color: gray;
 }
 
 .features h3, .features .h3 {
@@ -11688,6 +11714,14 @@ header {
   width: 75%;
 }
 
+.nav-item .nav-link {
+  color: gray;
+}
+
+.nav-link:hover {
+  color: #FA5959;
+}
+
 .download-extension {
   margin-top: 10rem;
 }
@@ -11700,8 +11734,18 @@ header {
   margin-top: 8rem;
 }
 
+.download-extension .card a:hover {
+  background-color: transparent;
+  color: #5265E1;
+  border: 1px solid #5265E1;
+}
+
 .accordion {
   width: 30%;
+}
+
+.accordion button:hover {
+  color: #FA5959;
 }
 
 footer .upper-footer {
@@ -11734,6 +11778,16 @@ footer .upper-footer form .input-group {
   border-bottom-right-radius: 0.5rem;
 }
 
+footer form .btn-secondary {
+  color: white;
+}
+
+footer form .btn-secondary:hover {
+  background-color: white;
+  border: 1px solid #FA5959;
+  color: #FA5959;
+}
+
 footer .lower-footer {
   padding: 2rem 4rem;
 }
@@ -11761,12 +11815,25 @@ footer .lower-footer .socials {
   gap: 2rem;
 }
 
+footer .lower-footer a {
+  color: white;
+}
+
+footer .lower-footer a:hover {
+  color: #FA5959;
+}
+
 .invalid-feedback {
   background-color: #dc3545;
   color: white;
   padding: 0.5rem 0;
   border-radius: 0.5rem;
   top: 2rem;
+}
+
+footer .lower-footer .socials img:hover {
+  cursor: pointer;
+  fill: #FA5959;
 }
 
 @media (max-width: 1400px) {

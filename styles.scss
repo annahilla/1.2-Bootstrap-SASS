@@ -43,6 +43,20 @@ header {
   padding: 0 3rem;
 }
 
+.nav-item button {
+  color: white;
+}
+
+.nav-item a:hover{
+  color: $secondary;
+}
+
+.nav-item button:hover {
+  background-color: transparent;
+  border: 1px solid $secondary;
+  color: $secondary;
+}
+
 // Hero
 .hero {
   margin-left: 3rem;
@@ -77,6 +91,19 @@ header {
     bottom: 0rem;
     right: 0rem;
 }
+
+.cta-buttons .btn-primary:hover {
+  background-color: transparent;
+  border: 1px solid $primary;
+  color: $primary;
+}
+
+.cta-buttons .btn-light:hover {
+  background-color: transparent;
+  border: 1px solid gray;
+  color: gray;
+}
+
 
 // Features section
 .features h3 {
@@ -115,6 +142,12 @@ header {
 .tab-text-content p {
   width: 75%;
 }
+.nav-item .nav-link {
+  color: gray;
+}
+.nav-link:hover{
+  color: $secondary;
+}
 
 
 // Download extension section
@@ -129,11 +162,20 @@ header {
   margin-top: 8rem;
 }
 
+.download-extension .card a:hover{
+  background-color: transparent;
+  color: $primary;
+  border: 1px solid $primary;
+}
+
 // Accordion
 .accordion {
   width: 30%;
 }
 
+.accordion button:hover {
+  color: $secondary;
+}
 
 // Footer
 footer .upper-footer{
@@ -166,6 +208,16 @@ footer .upper-footer form .input-group {
   border-bottom-right-radius: .5rem;
 }
 
+footer form .btn-secondary{
+  color: white;
+}
+
+footer form .btn-secondary:hover {
+  background-color: white;
+  border: 1px solid $secondary;
+  color: $secondary;
+}
+
 footer .lower-footer {
   padding: 2rem 4rem;
 }
@@ -193,12 +245,25 @@ footer .lower-footer .socials {
   gap: 2rem;
 }
 
+footer .lower-footer a{
+  color: white;
+}
+
+footer .lower-footer a:hover {
+  color: $secondary;
+}
+
 .invalid-feedback {
   background-color: $danger;
   color: white;
   padding: .5rem 0;
   border-radius: .5rem;
   top: 2rem;
+}
+
+footer .lower-footer .socials img:hover{
+  cursor: pointer;
+  fill: $secondary;
 }
 
 // Media Queries
