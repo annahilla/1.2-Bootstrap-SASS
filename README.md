@@ -20,7 +20,7 @@ This project is a **landing page** built using **HTML**, **SASS**, and **Bootstr
    git clone https://github.com/annahilla/1.2-Bootstrap-SASS
    ```
 
-2. Instal dependencies:
+2. Install dependencies:
 
    ```bash
    npm install

@@ -13,7 +13,7 @@
     <header>
         <nav class="navbar navbar-expand-lg d-flex justify-content-between">
             <!-- Logo -->
-            <img src="/Imagenes/logo-bookmark.svg" alt="Logo Bookmark">
+            <img src="Imagenes/logo-bookmark.svg" alt="Logo Bookmark">
 
             <!-- Toggler button -->
             <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
@@ -43,8 +43,8 @@
         </nav>
 
         <!-- Hero -->
-        <section class="hero row align-items-center justify-content-between gap-3">
-            <div class="hero-text-content col col-lg-5 col-12">
+        <section class="hero row">
+            <div class="hero-text-content col col-md-5 col-12">
                 <h1 class="fw-bolder">A Simple Bookmark Manager</h1>
                 <p class="text-body-tertiary">A clean and simple interface to organize your favourite
                     websites.
@@ -55,8 +55,8 @@
                         Firefox</button>
                 </div>
             </div>
-            <div class="hero-img-container col col-lg-6 col-12 position-relative">
-                <img class="hero-img img-fluid" src="/Imagenes/illustration-hero.svg"
+            <div class="hero-img-container col col-md-6 col-12 position-relative">
+                <img class="hero-img img-fluid" src="Imagenes/illustration-hero.svg"
                     alt="Hero illustration of a computer">
                 <div class="bg-box bg-primary rounded-start-pill z-n1 position-absolute"></div>
             </div>
@@ -99,12 +99,12 @@
             <div class="tab-pane fade show active" id="bookmarking-tab-pane" role="tabpanel"
                 aria-labelledby="bookmarking-tab" tabindex="0">
                 <div class="row align-items-center justify-content-center">
-                    <div class="tab-img-container col col-lg-6 col-12 position-relative">
+                    <div class="tab-img-container col col-md-6 col-12 position-relative">
                         <img class="img-fluid" src="Imagenes/illustration-features-tab-1.svg"
                             alt="Tab illustration of a computer">
                         <div class="bg-box-left bg-primary rounded-end-circle z-n1 position-absolute"></div>
                     </div>
-                    <div class="tab-text-content col col-lg-5 col-12 px-5">
+                    <div class="tab-text-content col col-md-5 col-12 px-5">
                         <h5 class=" display-6 fw-medium my-4">Bookmark in one click</h5>
                         <p class="text-body-tertiary">Organize your bookmarks however you like. Our simple
                             drag-and-drop interface gives you
@@ -118,12 +118,12 @@
             <div class="tab-pane fade" id="speedy-searching-tab-pane" role="tabpanel"
                 aria-labelledby="speedy-searching-tab" tabindex="0">
                 <div class="row align-items-center justify-content-center">
-                    <div class="tab-img-container col col-lg-6 col-12 position-relative">
+                    <div class="tab-img-container col col-md-6 col-12 position-relative">
                         <img class="img-fluid" src="Imagenes/illustration-features-tab-2.svg"
                             alt="Tab illustration of a computer">
                         <div class="bg-box-left bg-primary rounded-end-circle z-n1 position-absolute"></div>
                     </div>
-                    <div class="tab-text-content col col-lg-5 col-12 px-5">
+                    <div class="tab-text-content col col-md-5 col-12 px-5">
                         <h5 class=" display-6 fw-medium my-4">Intelligent search</h5>
                         <p class="text-body-tertiary">Our powerful feature will help you find saved sites
                             in no time at all. No need to trawl through all your bookmarks</p>
@@ -135,12 +135,12 @@
             <div class="tab-pane fade" id="easy-sharing-tab-pane" role="tabpanel" aria-labelledby="easy-sharing-tab"
                 tabindex="0">
                 <div class="row align-items-center justify-content-center">
-                    <div class="tab-img-container col col-lg-6 col-12 position-relative">
+                    <div class="tab-img-container col col-md-6 col-12 position-relative">
                         <img class="img-fluid" src="Imagenes/illustration-features-tab-3.svg"
                             alt="Tab illustration of a computer">
                         <div class="bg-box-left bg-primary rounded-end-circle z-n1 position-absolute"></div>
                     </div>
-                    <div class="tab-text-content col col-lg-5 col-12 px-5">
+                    <div class="tab-text-content col col-md-5 col-12 px-5">
                         <h5 class=" display-6 fw-medium my-4">Share your bookmarks</h5>
                         <p class="text-body-tertiary">Easily share your bookmarks and collections with
                             others.
@@ -246,11 +246,11 @@
             <div class="accordion-item">
                 <h2 class="accordion-header">
                     <button class="accordion-button collapsed fs-5" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                        data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseThree">
                         What about other chromium browsers?
                     </button>
                 </h2>
-                <div id="flush-collapseThree" class="accordion-collapse collapse"
+                <div id="flush-collapseFour" class="accordion-collapse collapse"
                     data-bs-parent="#accordionFlushExample">
                     <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate
                         the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more
@@ -311,14 +311,11 @@
 
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script>
-        // Example starter JavaScript for disabling form submissions if there are invalid fields
         (function () {
             'use strict'
 
-            // Fetch all the forms we want to apply custom Bootstrap validation styles to
             var forms = document.querySelectorAll('.needs-validation')
 
-            // Loop over them and prevent submission
             Array.prototype.slice.call(forms)
                 .forEach(function (form) {
                     form.addEventListener('submit', function (event) {

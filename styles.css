@@ -11474,7 +11474,8 @@ textarea.form-control-lg {
   padding: 0;
 }
 
-html, body {
+html,
+body {
   overflow-x: hidden;
 }
 
@@ -11482,7 +11483,8 @@ html, body {
   margin: 3rem 0;
 }
 
-.header p, .tab-text-content p {
+.header p,
+.tab-text-content p {
   font-size: 1.5rem;
   width: 50%;
 }
@@ -11493,7 +11495,7 @@ header {
 }
 
 .navbar {
-  padding: 0 3rem;
+  padding: 0 8rem;
 }
 
 .nav-item button {
@@ -11513,10 +11515,12 @@ header {
 .hero {
   margin-left: 3rem;
   margin: 5rem 0;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .hero .hero-text-content {
-  padding: 0 5rem;
+  padding: 0 8rem;
 }
 
 .hero .hero-text-content h1, .hero .hero-text-content .h1 {
@@ -11652,7 +11656,10 @@ footer .upper-footer form .input-group {
   width: 20%;
 }
 
-.input-group:not(.has-validation) > :not(:last-child):not(.dropdown-toggle):not(.dropdown-menu):not(.form-floating), .input-group:not(.has-validation) > .dropdown-toggle:nth-last-child(n+3), .input-group:not(.has-validation) > .form-floating:not(:last-child) > .form-control, .input-group:not(.has-validation) > .form-floating:not(:last-child) > .form-select {
+.input-group:not(.has-validation) > :not(:last-child):not(.dropdown-toggle):not(.dropdown-menu):not(.form-floating),
+.input-group:not(.has-validation) > .dropdown-toggle:nth-last-child(n+3),
+.input-group:not(.has-validation) > .form-floating:not(:last-child) > .form-control,
+.input-group:not(.has-validation) > .form-floating:not(:last-child) > .form-select {
   border-top-right-radius: 0.5rem;
   border-bottom-right-radius: 0.5rem;
 }
@@ -11735,14 +11742,21 @@ footer .lower-footer .socials img:hover {
 }
 
 @media (max-width: 1400px) {
+  .navbar {
+    padding: 0 6rem;
+  }
+  .hero .hero-text-content {
+    padding: 0 6rem;
+    padding-right: 0;
+  }
   .hero .hero-text-content h1, .hero .hero-text-content .h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
   .hero .hero-text-content p {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
   .hero .hero-img-container .hero-img {
-    width: 100%;
+    width: 90%;
   }
   .features h3, .features .h3 {
     padding: 1rem 0;
@@ -11755,15 +11769,61 @@ footer .lower-footer .socials img:hover {
     width: 60%;
   }
 }
-@media (max-width: 1200px) {
+@media (max-width: 992px) {
   .hero .hero-text-content h1, .hero .hero-text-content .h1 {
-    font-size: 2.5rem;
+    font-size: 2.1rem;
   }
-  .hero .hero-text-content p {
-    font-size: 1.5rem;
+  .hero .hero-img-container .hero-img {
+    width: 80%;
+  }
+  .download-extension {
+    margin-top: 0;
+    padding-top: 0;
+    margin: 0 auto;
+  }
+  .download-extension .cards-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .download-extension .cards-container .card:nth-child(2) {
+    margin-top: 0;
+  }
+  .download-extension .cards-container .card:nth-child(3) {
+    margin-top: 0;
+  }
+  footer .upper-footer {
+    padding: 3rem 2rem;
+  }
+  footer .upper-footer form {
+    flex-direction: column;
+  }
+  footer .upper-footer form .input-group,
+  footer .upper-footer .btn {
+    width: 80%;
+  }
+  footer .lower-footer .navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+  }
+  footer .lower-footer .nav-container,
+  footer .lower-footer .nav-container ul {
+    flex-direction: column;
+  }
+  .lower-footer .nav-container ul {
+    padding-left: 0;
+  }
+  .needs-validation.was-validated .btn-secondary {
+    margin-top: 2rem;
   }
 }
-@media (max-width: 992px) {
+@media (max-width: 768px) {
+  .navbar {
+    padding: 1rem 2rem;
+  }
   header .navbar .navbar-nav {
     width: 100%;
     text-align: center;
@@ -11774,17 +11834,18 @@ footer .lower-footer .socials img:hover {
     padding: 1rem 0;
   }
   .hero {
-    display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     margin-left: 0rem;
+    margin: 2rem 0;
+    padding: 0;
   }
   .hero .hero-text-content {
     order: 2;
     width: 80%;
     text-align: center;
-    margin-top: 3rem;
+    padding: 0;
+    margin-top: 0;
   }
   .hero .hero-text-content h1, .hero .hero-text-content .h1 {
     font-size: 3rem;
@@ -11801,11 +11862,14 @@ footer .lower-footer .socials img:hover {
   }
   .hero .hero-img-container {
     order: 1;
+    margin-left: 2rem;
   }
   .features .header {
     margin-top: 0;
   }
-  .features p, .download-extension p, .faq p {
+  .features p,
+  .download-extension p,
+  .faq p {
     width: 75%;
   }
   .features .nav-tabs {
@@ -11834,64 +11898,6 @@ footer .lower-footer .socials img:hover {
   .tab-text-content p {
     text-align: center;
   }
-  .download-extension {
-    margin-top: 0;
-    padding-top: 0;
-    margin: 0 auto;
-  }
-  .download-extension .cards-container {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  .download-extension .cards-container .card:nth-child(2) {
-    margin-top: 0;
-  }
-  .download-extension .cards-container .card:nth-child(3) {
-    margin-top: 0;
-  }
-  footer .upper-footer {
-    padding: 3rem 2rem;
-  }
-  footer .upper-footer form {
-    flex-direction: column;
-  }
-  footer .upper-footer form .input-group, footer .upper-footer .btn {
-    width: 80%;
-  }
-  footer .lower-footer .navbar {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 4rem;
-  }
-  footer .lower-footer .nav-container, footer .lower-footer .nav-container ul {
-    flex-direction: column;
-  }
-  .lower-footer .nav-container ul {
-    padding-left: 0;
-  }
-  .needs-validation.was-validated .btn-secondary {
-    margin-top: 2rem;
-  }
-}
-@media (max-width: 768px) {
-  header {
-    margin: 0;
-    padding: 1rem 0;
-  }
-  .navbar {
-    padding: 1rem 2rem;
-  }
-  .hero {
-    margin: 2rem 0;
-    padding: 0;
-  }
-  .hero .hero-text-content {
-    padding: 0;
-    margin-top: 0;
-  }
   .bg-box-left {
     bottom: -5rem;
   }
@@ -11903,11 +11909,18 @@ footer .lower-footer .socials img:hover {
   }
 }
 @media (max-width: 576px) {
-  .hero .hero-text-content h1, .hero .hero-text-content .h1, .features .header h3, .features .header .h3 {
+  .hero .hero-text-content {
+    margin-top: 3rem;
+  }
+  .hero .hero-text-content h1, .hero .hero-text-content .h1,
+  .features .header h3,
+  .features .header .h3 {
     font-size: 2rem;
     padding: 1rem 0;
   }
-  .hero .hero-text-content p, .header p, .tab-text-content p {
+  .hero .hero-text-content p,
+  .header p,
+  .tab-text-content p {
     font-size: 1.2rem;
   }
   .cta-buttons .btn {
@@ -11922,7 +11935,8 @@ footer .lower-footer .socials img:hover {
   .tab-text-content {
     margin-top: 3rem;
   }
-  .tab-text-content p, .header p {
+  .tab-text-content p,
+  .header p {
     width: 90%;
   }
 }
