@@ -19,3 +19,9 @@ This project is a **landing page** built using **HTML**, **SASS**, and **Bootstr
    ```bash
    git clone https://github.com/annahilla/1.2-Bootstrap-SASS
    ```
+
+2. Instal dependencies:
+
+   ```bash
+   npm install
+   ```
